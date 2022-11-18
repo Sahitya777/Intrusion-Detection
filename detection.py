@@ -63,8 +63,6 @@ svc = VotingClassifier(estimators=[('svc1', svc1), ('svc2', svc2), ('svc3', svc3
 svc.fit(X_train, Y_train)
 # Fit the model
 
-
-
 from sklearn.ensemble import VotingClassifier
 #Generating ensemble
 ensemble = VotingClassifier(estimators=[('gnb', GNB), ('dtc', DTC), ('svc', svc)], voting='soft') #Type of voting SOFT
